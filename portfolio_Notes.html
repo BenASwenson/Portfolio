@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DevBen Portfolio Website</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="images/devBen.png" alt="" class="header_img">
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+					<li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Introduction -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				powerful<strong>online notes App</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">Store and manage online notes</p>
+			<img src="images/portfolio_Notes_sq.jpg" class="intro__img" alt="">
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+				Made with HTML, CSS, Bootstrap, jQuery, PHP, MySQL and AJAX.  Enables users to store and 
+				manage notes by editing or deleting them. The landing page offers options 'Sign up' or 'Login'.  
+				When pressing the 'Sign up' button, a modal appears with inputs for 'Username', 'Email Adress' 
+				and 'password'.  If any errors, corresponding error messages appear as instructions to complete 
+				the process. Otherwise, if the information has been entered correctly, a message appears confirming 
+				an email has been sent with an activation link.   
+			</p>
+			<img src="images/portfolio_Notes.jpg" alt="">
+			<p>
+				When clicking 'Login' on the landing page, a modal appears with user input fields 'Email' and 'Password' 
+				along with a 'Login' button.  Also included is a 'Remember me' checkbox, which automatically logs a 
+				user in next time, a 'Forgot Pasword?' link to a modal for submitting an email address where a new 
+				password can be created via a link, and 'Register' and 'Cancel' buttons. 
+			</p>
+			<p>
+				Once logged in, a user will land in the 'My Notes' page with all notes created thus far.  Clicking 
+				'Add Note' will initiate a blank notepad.  Above the notepad the 'All Notes' button will link the user 
+				back to the 'My Notes' page. Each note listing includes the first line of the note's text and the date 
+				and time of when it was last updated.  It can be clicked to reveal the entire note.  If the 'Edit' button 
+				is clicked, 'delete' buttons appear next to each note entry.  If a note is deleted, a user must click the 
+				'Done' button to process the deletion.
+			</p>
+			<p>
+				The top navbar includes a link to a 'Profile' page with general account settings, such as 'Username', 
+				'Email' and 'Password', which can all be updated.  When clicked, another modal appears with the relevant 
+				inputs to make the amendments, which can be completed by clicking the 'Submit' button.  If changing email, 
+				to prove the user owns the address, the link for processing the change is sent to the email address in question.
+			</p>
+
+		</div>
+			
+			
+			
+		<!-- Footer -->
+		<footer class="footer">
+			<a href="mailto:info@benswenson.net" class="footer__link">info@benswenson.net</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://codepen.io">
+						<i class="fab fa-codepen"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="http://dribble.com">
+						<i class="fab fa-dribbble"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://twitter.com">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+
+	</body>
+
+</html>

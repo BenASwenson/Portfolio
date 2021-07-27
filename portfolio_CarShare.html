@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DevBen Portfolio Website</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="images/devBen.png" alt="" class="header_img">
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+					<li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Introduction -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				Car Share <strong>to do your part</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">
+				Share your next journey
+			</p>
+			<img src="images/portfolio_CarShare_sq.jpg" class="intro__img" alt="">
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+				Made with HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, MySQL, GoogleMaps APIs, AJAX and JSON. Facilitates 
+				the sharing of car journeys for users around the world. Users can enter into input fields a departure and 
+				destination to search for a car journey. Google Maps will draw the route and when the search button is clicked 
+				the website looks for any location within a 10 mile radius of both the departure and destination and returns 
+				results of available car share opportunities.  
+			</p>
+			<p>	
+				Each result shows information about the trip itself 
+				as well as the name of the drive and a profile picture of their car. Also the departure and 
+				destination details are printed along with the date, time and either 'One-off journey' or 'Regular'  
+				as well as the price per seat and the number of seats available. If a result is clicked, an 
+				animated element reveals more information about the driver, including gender, telephone number 
+				and a description. The telephone number is only available to those who login.
+			</p>
+			<img src="images/portfolio_CarShare2.jpg" alt="">
+			<p>
+				Once a user logs in, they are directed to 'My Trips' page where all trips are managed.  
+				A trip can be added, edited or deleted.  When adding a trip, a departure and destination are 
+				selected and the Google Maps window draws the corresponding route. 
+			</p>
+			<p>
+				The user then chooses how much to charge for the journey, how many seats are available and 
+				whether it's 'Regular' or 'One-off'.  If 'Regular' is chosen, days of the week will appear 
+				as checkboxes to select along with the time to be selected.  If 'One-off' is chosen, two fields 
+				will appear, one to choose the date and the other to select a time.  A trip can be edited to 
+				change any of the details or deleted entirely.
+			</p>
+
+		</div>
+			
+			
+			
+		<!-- Footer -->
+		<footer class="footer">
+			<a href="mailto:info@benswenson.net" class="footer__link">info@benswenson.net</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://codepen.io">
+						<i class="fab fa-codepen"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="http://dribble.com">
+						<i class="fab fa-dribbble"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://twitter.com">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+
+	</body>
+
+</html>

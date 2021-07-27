@@ -1,0 +1,13 @@
+Notes
+
+HTML, CSS, Bootstrap, jQuery, PHP, MySQL, AJAX
+
+Powerful online notes app which allows users to store their notes or manage notes by editing or deleting them.  Includes advanced features as you would find in Facebook or Twitter.
+
+The landing page offers a couple of options, 'Sign up'  or 'Login'.  When pressing the 'Sign up' button, a modal will appear with inputs for 'Username', 'Email Adress' and 'password'.  If there are any errors, corresponding error messages will appear as instructions to complete the process. Otherwise, if the information has been entered correctly, a message will appear confirming an email has been sent with an activation link.  
+
+When clicking 'Login' on the landing page, a modal will appear with user input fields 'Email' and 'Password' along with a 'Login' button.  Also included is a 'Remember me' checkbox, which automatically logs a user in next time, a 'Forgot Pasword?' link to a modal for submitting an email address where a new password can be created via a link, and 'Register' and 'Cancel' buttons.
+
+Once logged in, a user will land in the 'My Notes' page with all notes created thus far.  Clicking 'Add Note' will initiate a blank notepad to place text.  Above the notepad the 'All Notes' button will take the user back to the 'My Notes' page. Each note listing includes the first line of the note's text and the date and time of when it was last updated.  It can be clicked to reveal the entire note.  If the 'Edit' button is clicked, 'delete' buttons appear next to each note entry.  If a note is deleted, a user must click the 'Done' button to process the deletion.
+
+The top navbar includes a link to a 'Profile' page with general account settings, such as 'Username', 'Email' and 'Password', which can all be updated.  When clicked, another modal appears with the relevant inputs to make the amendments, which can be completed by clicking the 'Submit' button.  If changing email, to prove the user owns the address, the link for processing the change is sent to the email address in question.

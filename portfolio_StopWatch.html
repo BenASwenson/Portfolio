@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DevBen Portfolio Website</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="images/devBen.png" alt="" class="header_img">
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+					<li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+					<li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Introduction -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				Stopwatch <strong>Countdown timer</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">Keep track of time</p>
+			<img src="images/portfolio_StopWatch_sq.jpg" class="intro__img" alt="">
+		</section>
+
+		<div class="portfolio-item-individual">
+			<p>
+				Built with HTML, CSS, jQuery and Bootstrap.  Once the page is loaded, we see two buttons, 
+				'Start' and 'Lap'.  If the 'Start' button is clicked, two counters start, the time counter 
+				and the lap counter.  If we click on the 'Stop' button, both counters will stop.  We can 
+				resume again by clicking on the 'Resume' button.  If we click on the 'Lap' button, the lap 
+				time will restart from zero and we'll retrieve information about the previous lap.  The lap 
+				number and the duration of that lap will print below.  If we click again on the 'Lap' button, 
+				then we'll retrieve information again about the previous lap and another lap will start. If 
+				we 'Stop' the counters and click on the 'Reset' button, the page will reload and we'll start 
+				from scratch.
+ 
+			</p>
+			<img src="images/portfolio_StopWatch.jpg" alt="">
+			<p>
+				The Stopwatch App logic is as follows.  If the 'Start' button is clicked, the counter will 
+				start, the 'Stop' and 'Lap' buttons will show and Stopwatch Mode will equal ON.  If the 'Stop' 
+				button is clicked, the counter will stop and the 'Resume' and 'Reset' buttons will show.  If 
+				the 'Resume' button is clicked, the counter will start and the 'Stop' and 'Lap' buttons will show. 
+			</p>
+			<p>
+				If the 'Reset' button is clicked, the page will reload.  If the 'Lap' button is clicked, the lap 
+				counter will restart and the details of the previous lap will print.  The 'Lap' button can be 
+				clicked as many times as a user requires and each lap's details will print below in a scrollable 
+				element.
+			</p>
+
+		</div>
+			
+			
+			
+		<!-- Footer -->
+		<footer class="footer">
+			<a href="mailto:info@benswenson.net" class="footer__link">info@benswenson.net</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://codepen.io">
+						<i class="fab fa-codepen"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="http://dribble.com">
+						<i class="fab fa-dribbble"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://twitter.com">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+
+	</body>
+
+</html>

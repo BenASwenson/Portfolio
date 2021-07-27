@@ -1,0 +1,19 @@
+Maths Game Logic
+
+Mathematics game checking how well users know their multiplication table up to 10.  
+
+HTML, CSS, Javascript
+
+
+
+Click on start/reset button
+
+Are we playing?
+
+If yes, reload page
+
+If no, generate new questions & answers, set score to 0, change button text from 'start game' to 'reset game', show countdown box, reduce time by one second until no time left.  Then show game over message & change button text from 'reset game' to 'start game'.
+
+Click on answer box.  If we're not playing, no action.  If we are playing and it's the wrong answer show 'try again' box for one second.  If it's the right answer, increase score by 1, show 'correct' box for 1 second and generate new question & answers.
+
+Used CSS gradients to style the backgrounds of HTML elements.  Also, box shadows to add 3D effects to page.  And used transitions to add nice interactivity and the best user experience.  Also used nice Javascript functions to change inner HTML of elements.  And managed to show and hide elements.  And used nice functions to create timing events.

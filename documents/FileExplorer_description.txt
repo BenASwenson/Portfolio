@@ -1,0 +1,28 @@
+Online File Explorer App
+
+Pure Node.js (no Node.js frameworks), Bootstrap 
+
+This app is a real showcase demonstrating some advanced capabilities and skills used while building this project.  This includes core Node.js modules like the file system, the child processes, the path module, etc.  I also wrote Javascript code using ES6 and managed to master advanced code like using promises, etc.
+
+
+When users land on the home page they can explore different folders and read files inside them.  The names of the folders and files are located in the left column of the table. Their respective sizes are based in the middle of the table.  The right column indicates the time that each of the folders or files were last modified.  At the top of the page the full path of the chosen folder or file is in view, relative to the home directory, in the form of a breadcrumb.  Users can click on any part of the path to link to that particular folder or file.  This directory 'Home' is like a static folder with static content which is served to users.  With video files, we don't expect users to download the entire video to view.  Instead readable file streams are utilized where chunks of data are sent to the user as they are watching.  HTML files are clickable and will display in the browser with any javascript and css dependencies.  Another important feature of the app is that the order of the folders and files can be changed according to name, size or last modified.  So, for example, if the 'name' header is clicked the contents will change to reverse alphabetical order.  Clicking on 'size' will alternate between increasing in size to decreasing in size.  And the same applies to 'last modified'.  To build this project a wide range of built in modules were utilised, for instance 'http' to create a server and accept user requests and respond to them.  'Https' module was also used to get JSON data from an external link which uses https.  The 'child processes' module was also used to help run shell commands run directly from the Node code, for instance to get the size of directories. The 'path' module was used to help manipulate paths, quite an important feature of this project as the paths of files and directories are printed at the top of the page and paths are needed to read the files.  The 'file system' module was used not only to read data on the server and pass it to the http response, but also to help create readable streams with videos so chunks of data are sent to the user instead of the whole file.
+
+
+Logic
+
+To start a user sends a request to the server.  The request is going to be in the format 'domain/pathname'.  Then the server is going to be listening and receive requests.  In order to get the URL pathname, the request is parsed to produce '/pathname'.  Next, we get the equivalent path in the static folder located on the server, ie '../static_folder/pathname'.  While looking for the full path in the server there will be three options.  The first is if there are no results or the path is not a folder or a file, in which case a '404: File not found' page is sent to the user. If a folder is found a page showing the content of the folder will be sent.  If a file is found the file will be served to the user.
+
+
+How to show the content of a folder
+
+First the title of the page is set to whichever folder name is selected.  Then we get the folder path and create the breadcrumb, which is located at the top of the page.  The next step is to loop through the elements of the folder, specifically files and folders.  For each element we'll get some details: the name, the size in human readable format, when it was last modified and the direct link to the folder or file so that when clicked the direct link takes the user to the folder or file.  After retrieving these details, a table row can be built and data then inserted. Finally, the webpage can be sent to the user. 
+
+
+How to serve a file?
+
+First of all, we look for the file mime type using its extension.  For example, if we have book.pdf, its extension is '.pdf' and its mime type is 'application/pdf'.  If the mime type is not found, the file will be served as text/plain.  If the mime type is found and it's a pdf file, it will be served using the inline method: read the file on the browser.  If the type is audio/video, the file will stream by chunks to improve user experience.  For any other types, the file will be served in a normal way.   
+ 
+
+Ordering table rows by name, size or last modified
+
+If the name header is clicked, and the names are sorted in ascending order, the rows by name will sort in descending order and the arrow icon will update down.  If the name header is clicked, and the names are sorted in descending order, the rows by name will sort in ascending order and the arrow icon will update up.  If the name header is clicked and the names are not sorted, the rows by name will sort in ascending order and the arrow icon will update up.  The same logic applies to clicking on the 'size' and the 'last modified' headers.
