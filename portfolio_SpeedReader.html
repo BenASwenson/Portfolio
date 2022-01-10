@@ -31,28 +31,41 @@
 		<!-- Introduction -->
 		<section class="intro">
 			<h1 class="section__title section__title--intro">
-				The title <strong>of my project</strong>
+				Speed Reader <strong>App</strong>
 			</h1>
-			<p class="section__subtitle section__subtitle--intro"></p>A short section__subtitle</p>
-			<img src="images/portfolio_sq_07.jpg" class="intro__img" alt="">
+			<p class="section__subtitle section__subtitle--intro">Unique Reading Experience</p>
+			<img src="images/portfolio_SpeedReader_sq.jpg" class="intro__img" alt="">
 		</section>
 
 		<div class="portfolio-item-individual">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-				nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Once the user loads the app, they'll land on the home screen where they'll find 
+				an input field to enter or copy and paste their reading text.  Once they click on 
+				the 'Start Reading' button, the app is going to start reading the input text by 
+				showing one word at a time in the transparent box.  The user will be able to pause 
+				or resume the reading anytime.  Also they will be able to control the progress of 
+				the reading and go backward or forward.  They can also control things like the font 
+				size of the text and the reading speed. 
 			</p>
-			<img src="images/business.jpg" alt="">
+			<img src="images/portfolio_SpeedReader.jpg" alt="">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-				nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				The logic of the app is as follows: following the input of the reading text, we turn 
+				the text into an array of words.  We calculate the length of the array and if the number 
+				of words is greater than 1, we read the text and show controls. Otherwise, an error 
+				message is revealed.  In order to read text, we'll get each word based on its index 
+				value. So we initiate a counter at zero and when it starts we show each word as its 
+				index value correlates to the counter.  The progress slider will be set up with its 
+				min value 0 and its max value the length of the array so users can adjust the slider 
+				to the part of the text they want to read.  As each word appears, we'll calculate the 
+				progress as a percentage which will display just above the progress bar. We divide the 
+				value of the counter by the number of words - 1 and multiply that by 100 to get our percentage. 
 			</p>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-				nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Once the user reaches the last word, the 'pause' button disappears. If while reading 
+				the 'Pause' button is clicked, the reading is stopped, the 'Pause' button is hidden and 
+				the 'Resume' button shows. If the user clicks 'Resume', the reading will resume, the 
+				'Pause' button shows and the 'Resume' button hides.  If the 'New' button is clicked, 
+				the app will reload.
 			</p>
 
 		</div>
@@ -64,22 +77,17 @@
 			<a href="mailto:info@benswenson.net" class="footer__link">info@benswenson.net</a>
 			<ul class="social-list">
 				<li class="social-list__item">
-					<a class="social-list__link" href="https://codepen.io">
-						<i class="fab fa-codepen"></i>
+					<a class="social-list__link" href="https://www.linkedin.com/in/benswenson/">
+						<i class="fab fa-linkedin-in"></i>
 					</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__link" href="http://dribble.com">
-						<i class="fab fa-dribbble"></i>
-					</a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link" href="https://twitter.com">
+					<a class="social-list__link" href="https://twitter.com/BenASwenson">
 						<i class="fab fa-twitter"></i>
 					</a>
 				</li>
 				<li class="social-list__item">
-					<a class="social-list__link" href="https://github.com">
+					<a class="social-list__link" href="https://github.com/BenASwenson">
 						<i class="fab fa-github"></i>
 					</a>
 				</li>
